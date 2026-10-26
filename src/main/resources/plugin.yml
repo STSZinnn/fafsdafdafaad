@@ -1,0 +1,14 @@
+name: SovereignSMP
+version: '1.3.0'
+main: com.sovereignsmp.SovereignSMPPlugin
+api-version: '1.21.11'
+description: The Echo Scythe is artifact I / VII; Sovereign Mace remains a unique special weapon
+author: SovereignSMP
+commands:
+  sovereign:
+    description: Sovereign artifacts, claiming, and administration
+    usage: /sovereign help
+permissions:
+  sovereign.admin:
+    description: Mint or recover a unique Sovereign artifact
+    default: op

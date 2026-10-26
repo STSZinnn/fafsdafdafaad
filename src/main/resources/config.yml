@@ -1,0 +1,57 @@
+# Sovereign SMP 1.3 — Artifact I / VII: Echo Scythe; special weapon: Sovereign Mace
+# Auto-created as plugins/SovereignSMP/config.yml
+# Cooldowns are per-user and in seconds; all distances are in Minecraft blocks.
+# Damage is Minecraft health points (2 = 1 heart), before armor reductions.
+
+mace:
+  passive:
+    slowness-ticks: 45  # Every third successful mace hit, Slowness II + downward tug
+  event-horizon:
+    cooldown-seconds: 18
+    radius-blocks: 13.0
+    target-range-blocks: 28.0
+    pull-velocity: 1.95
+    pull-duration-ticks: 22
+    slowness-ticks: 45
+  collapse:
+    cooldown-seconds: 25
+    radius-blocks: 9.0
+    damage-health-points: 5.0
+    knockback: 1.2
+  singularity:
+    cooldown-seconds: 40
+    target-range-blocks: 20.0
+    radius-blocks: 6.5
+    burst-push-velocity: 2.1
+    orbit-block-count: 12
+    block-sample-radius: 5.0
+    duration-ticks: 80
+    burst-damage-health-points: 6.0
+
+# All artifact tooltips have RGB-gradient titles and descriptions without a pack.
+# To show the special gradient BACKGROUND, enable the separate Sovereign tooltip pack
+# in your client and run /sovereign tooltip on (OP-only).
+# The background + frame need the OPTIONAL tooltip-only resource pack.
+# Leave disabled if your server isn't distributing the pack yet.
+tooltips:
+  custom-background-enabled: false
+
+# Artifact I / VII: Echo Scythe of the Deep (unbreakable netherite sword)
+# NOTE: True Invisibility hides the whole player entity from other clients,
+# including held items, armor, and name tag. It silences entity sounds but
+# other actions (breaking blocks, projectiles, plugin particles) can still be heard/seen.
+echo:
+  passive:
+    sense-radius-blocks: 18.0
+  pulse:
+    cooldown-seconds: 22
+    radius-blocks: 18.0
+    glowing-seconds: 6
+  silence:
+    cooldown-seconds: 45
+    duration-seconds: 7
+    enemy-radius-blocks: 9.0
+  wrath:
+    cooldown-seconds: 55
+    range-blocks: 22.0
+    damage-health-points: 5.0
